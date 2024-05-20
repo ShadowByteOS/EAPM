@@ -30,3 +30,78 @@ To unleash the full potential of EAPM, ensure you have the following prerequisit
 
 Easy Android PayLoad Maker (EAPM) is the brainchild of ShadowByte, crafted to elevate your security testing experience.
 
+Ecco le istruzioni per l'installazione e l'uso, da aggiungere al README del tuo repository:
+
+
+## Installation
+
+To get started with Easy Android PayLoad Maker (EAPM), follow these simple steps:
+
+### Prerequisites
+
+Ensure you have the following prerequisites installed:
+
+- Python 3
+- Colorama library
+- Metasploit Framework
+- Apache2
+
+### Installation Script
+
+Run the provided installation script to automatically install the prerequisites:
+
+```bash
+./install_prerequisites.sh
+```
+
+### Manual Installation
+
+If you prefer manual installation, follow these steps:
+
+1. Install Python 3:
+
+```bash
+# For Debian-based systems (e.g., Ubuntu)
+sudo apt update
+sudo apt install python3
+```
+
+2. Install Colorama library:
+
+```bash
+pip3 install colorama
+```
+
+3. Install Metasploit Framework:
+
+```bash
+sudo apt update
+sudo apt install -y metasploit-framework
+```
+
+4. Install Apache2:
+
+```bash
+sudo apt install -y apache2
+```
+
+## Usage
+
+Easy Android PayLoad Maker (EAPM) offers a user-friendly interface for generating payload APK files and managing the Apache2 service. Follow these steps to get started:
+
+1. Launch EAPM by running the main script:
+
+```bash
+sudo python3 eapm.py
+```
+
+2. Navigate through the intuitive menu and select the desired option:
+
+   - **Create Payload APK**: Generate payload APK files with customizable parameters.
+   - **Move APK to /var/www/html**: Move generated APK files to the `/var/www/html` directory for easy access via Apache2.
+   - **Manage Apache2 Service**: Start or stop the Apache2 service directly from EAPM.
+
+3. Follow the prompts to customize payload parameters or manage the Apache2 service.
+
+4. Access your generated APK files via the Apache2 web server for testing and deployment.
+

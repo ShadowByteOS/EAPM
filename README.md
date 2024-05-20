@@ -1,4 +1,3 @@
----
 
 **Easy Android PayLoad Maker (EAPM) - Version 1.0**
 
@@ -31,4 +30,3 @@ To unleash the full potential of EAPM, ensure you have the following prerequisit
 
 Easy Android PayLoad Maker (EAPM) is the brainchild of ShadowByte, crafted to elevate your security testing experience.
 
----

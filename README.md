@@ -1,5 +1,5 @@
 
-**Easy Android PayLoad Maker (EAPM) - Version 1.0**
+**Easy Android PayLoad Maker (EAPM) - Version 2.0**
 
 Empower your security testing with Easy Android PayLoad Maker (EAPM) – a versatile tool designed to streamline the creation of payload APK files for Android devices. EAPM combines simplicity with power, offering an intuitive interface that simplifies the process of generating payloads while leveraging the robust capabilities of the Metasploit Framework.
 
@@ -10,6 +10,10 @@ Empower your security testing with Easy Android PayLoad Maker (EAPM) – a versa
 🌐 **Seamless Integration with Apache2:** EAPM seamlessly integrates with Apache2, allowing you to move generated APK files to the `/var/www/html` directory effortlessly. Your payloads are instantly accessible via the Apache2 web server, streamlining deployment.
 
 🔧 **Convenient Apache2 Service Management:** Take control of the Apache2 service directly from EAPM. Start or stop the service with a simple command, eliminating the need for manual intervention.
+🎛️ **Configurable Defaults:** Save your preferred IP, port and output directory for faster payload creation.
+📄 **Payload Management:** List and delete generated APK files from the interface.
+🎯 **Integrated Listener:** Launch a Metasploit listener with a single option to quickly catch connections.
+✨ **Animated Feedback:** Spinner animations show progress during long running tasks.
 
 **Prerequisites:**
 
@@ -98,10 +102,13 @@ sudo python3 EAPM.py
 
 2. Navigate through the intuitive menu and select the desired option:
 
-   - **Create Payload APK**: Generate payload APK files with customizable parameters.
-   - **Move APK to /var/www/html**: Move generated APK files to the `/var/www/html` directory for easy access via Apache2.
-   - **Manage Apache2 Service**: Start or stop the Apache2 service directly from EAPM.
+    - **Create Payload APK**: Generate payload APK files with customizable parameters and saved defaults.
+    - **Move APK to /var/www/html**: Move generated APK files to the `/var/www/html` directory for easy access via Apache2.
+    - **Manage Apache2 Service**: Start or stop the Apache2 service directly from EAPM.
+    - **List/Delete Payloads**: View existing APKs or remove them when no longer needed.
+    - **Configure Defaults**: Store your preferred IP, port and output folder.
+    - **Start Listener**: Open a Metasploit handler ready to accept connections.
 
-3. Follow the prompts to customize payload parameters or manage the Apache2 service.
+3. Follow the prompts to customize payload parameters or manage services.
 
 4. Access your generated APK files via the Apache2 web server for testing and deployment.
